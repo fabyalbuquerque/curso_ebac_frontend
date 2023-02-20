@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+
+header .container {
+    display: block;
+    padding: 32px 0;
+    margin-top: 32px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+section .container {
+    padding: 32px 0;
+    border: 1px solid gray;
+    border-top: none;
+}
+
+header h1,
+header h2 {
+    margin-top: 32px;
+}
+
+form input,
+form label,
+form button {
+    width: 500px;
+    display: block;
+    text-align: center;
+    margin: 8px auto;
+    padding: 10px;
+}
+
+form label,
+form button {
+    text-transform: uppercase;
+}
+
+form button {
+    margin-top: 32px;
+    background-color: aquamarine;
+    border-color: gray;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(187, 228, 214);
+    border-color: aquamarine;
+}
+
+.mensagem-b-menor {
+    width: 500px;
+    display: none;
+    text-align: center;
+    margin: 1px auto;
+    padding: 4px;
+    background-color: rgb(223, 4, 4);
+    color: #fff;
+}
+
+.mensagem-valida {
+    width: 500px;
+    display: none;
+    text-align: center;
+    margin: 1px auto;
+    padding: 4px;
+    background-color: rgb(6, 233, 25);
+    color: #fff;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline: red;
+}
