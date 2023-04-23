@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART BIANO</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        #topo {
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        #logo h1 {
+            color: #ccc;
+        }
+
+        ul.navbar-nav > li.nav-item a.nav-link,
+        ul.navbar-nav > li.nav-item a.nav-link:visited,
+        ul.navbar-nav > li.nav-item a.nav-link:link {
+            color: #ccc;
+        }
+
+        li.nav-item a.nav-link.active {
+            color: #fff;
+        }
+
+        ul.navbar-nav > li.nav-item a.nav-link:hover {
+            color: #fff;
+        }
+
+        .flex-wrap-inherit {
+            flex-wrap: inherit;
+        }
+
+        section {
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="topo">
+        <div class="navbar bg-black navbar-expand-md">
+            <div class="container">
+                <div class="d-flex justify-content-start flex-wrap-inherit">
+                    <div id="menu-hamburguer" class="p-2">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-brand" id="logo">
+                        <h1>SMART BIANO</h1>
+                    </div> 
+                    <nav id="menu" class="collapse navbar-collapse justify-content-between">
+                        <ul class="nav navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#produtos" data-bs-toggle="dropdown">
+                                    Produtos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#smartphone">Smartphone</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#smartphone">Smartwatch</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#smartphone">Notebook</a>
+                                    </li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#promocao" data-bs-toggle="dropdown">
+                                    Promoção
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#promocoes">Ver todas as promoções</a>
+                                    </li>
+                                </ul>
+                            </li>       
+                        </ul>
+                    </nav>           
+                </div>
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a type="button" class="nav-link" id="vendedor">Contatar vendedor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col">
+                <section>
+                    <div class="row">
+                        <div class="col">
+                            <div class="carousel position-static slide" data-bs-ride="carousel">
+                                <div class="carousel-inner position-static">
+                                    <div class="carousel-item active position-static">
+                                        <img class="d-block w-100" src="./image/carousel-netebook.jpg" alt="">
+                                    </div>
+                                    <div class="carousel-item active position-static">
+                                        <img class="d-block w-100" src="./image/carousel-smartwach.jpg" alt="">
+                                    </div>
+                                    <div class="carousel-item active position-static">
+                                        <img class="d-block w-100" src="./image/carousel-netebook.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div class="toast-container position-fixed end-0 bottom-0 p-3">
+        <div class="toast" id="contato-vendedor">
+            <div class="toast-header">
+                <h5>Um de nossos vendedores entrará em contato</h5>
+            </div>
+            <div class="toast-body">
+                <form>
+                    <label class="form-label" for="nome">Seu nome</label>
+                    <input class="form-control" type="text" id="nome">
+                    <label for="email" class="form-label">Seu e-mail:</label>
+                    <input type="email" id="email" class="form-control">
+                    <label for="mensagem" class="form-label">Sua mensagem:</label>
+                    <textarea id="mensagem" class="form-control"></textarea>
+                    <div class="mt-2 pt-2">
+                        <button type="submit" class="btn btn-success btn-sm">Enviar</button>
+                        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="toast">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('vendedor');
+        const contatoVendedor = document.getElementById('contato-vendedor');
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function() {
+                const toast = new bootstrap.Toast(contatoVendedor);
+                toast.show();
+            })
+        }
+    </script>
+</body>
+</html>
