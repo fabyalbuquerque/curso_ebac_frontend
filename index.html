@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Eyes Resort</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="build/styles/main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title"> <span class="text-colored-ocean">Ocean <i class="bi bi-tsunami me-1"></i></span> Eyes Resort</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#nossa-historia" class="nav-link active">
+                            <i class="bi bi-camera me-1"></i>
+                            Nossa história
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#atracoes" class="nav-link">
+                            <i class="bi bi-tsunami me-1"></i>
+                            Atrações
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#hoteis" class="nav-link">
+                            <i class="bi bi-send me-1"></i>
+                            Nossos hotéis
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#reserva" class="nav-link">
+                            <i class="bi bi-sun me-1"></i>
+                            Quero Reservar
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+
+        <section id="nossa-historia">
+            <div class="carousel slide" data-bs-ride="carousel" id="carrossel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="source/images/carousel/beach-1868047_1920.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="source/images/carousel/bora-bora-3023437_1920.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="source/images/carousel/paradise-598201_1920.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="source/images/carousel/trees-5033072_1920.jpg" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#carrossel">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#carrossel">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5" id="historia">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="source/images/pier-5672967_1920.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="text-colored-title section-title">História do melhor resort do mundo</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos 
+                                id magni facere dolore, aliquam esse ratione hic vitae. 
+                                Nulla assumenda earum recusandae magni, aliquid maxime vitae est fuga eaque!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ducimus doloribus vero rerum magni quasi harum illum, soluta, voluptatum fuga sed, 
+                                voluptatibus officiis maiores iure perspiciatis aliquid nostrum. Corporis, alias!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 pb-5" id="porque-melhor">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="source/images/pier-5672967_1920.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h3 class="text-colored-title section-title">Porque somos a melhor escolha para suas férias</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam minima beatae excepturi, eaque sit sequi magni nihil temporibus 
+                            </p>
+                            <p>
+                                <ul>
+                                    <li><i class="bi bi-camera me-1"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li><br>
+                                    <li><i class="bi bi-camera me-1"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dignissimos veniam tenetur</li><br>
+                                    <li><i class="bi bi-camera me-1"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore blanditiis</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="atracoes" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Nossas <span class="text-colored-title">atrações</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6 col-md-4">
+                        <img src="source/images/atracoes/dolphins-1869337_1920.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-tsunami me-1"></i>
+                            Nado com golfinhos
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut animi eum dicta at deserunt veniam odit pariatur eius quo, voluptatibus
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="source/images/atracoes/turtle-588497_1920.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-tsunami me-1"></i>
+                            Mergulho profundo
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut animi eum dicta at deserunt veniam odit pariatur eius quo, voluptatibus
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="source/images/atracoes/paragliding-1220001_1920.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-tsunami me-1"></i>
+                            Parapente
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut animi eum dicta at deserunt veniam odit pariatur eius quo, voluptatibus
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="source/images/atracoes/travel-3113734_1920.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-tsunami me-1"></i>
+                            Jantares
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut animi eum dicta at deserunt veniam odit pariatur eius quo, voluptatibus
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="source/images/atracoes/band-426829_1920.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-tsunami me-1"></i>
+                            Shows
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut animi eum dicta at deserunt veniam odit pariatur eius quo, voluptatibus
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <img src="source/images/atracoes/hawaii-175888_1920.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-tsunami me-1"></i>
+                            Lual
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut animi eum dicta at deserunt veniam odit pariatur eius quo, voluptatibus
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hoteis" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Onde <span class="text-colored-title">Estamos</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-colum nav-hoteis">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#florianopolis" class="fw-bold text-start nav-link text-colored active">Florianópolis</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#joao-pessoa" class="fw-bold text-start nav-link text-colored">João Pessoa</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#natal" class="fw-bold text-start nav-link text-colored">Natal</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#porto-de-galinhas" class="fw-bold text-start nav-link text-colored">Porto de Galinhas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#rio-de-janeiro" class="fw-bold text-start nav-link text-colored">Rio de Janeiro</button>        
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div id="florianopolis" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100" src="source/images/hoteis/floripa.jpg" alt="foto do hotel">
+                                        <h5 class="text-colored fw-bold mt-2">Ocean Eyes Resort - Floripa</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100" src="source/images/hoteis/floripa.jpg" alt="foto do hotel">
+                                        <h5 class="text-colored fw-bold mt-2">Ocean Eyes Resort - Floripa 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="joao-pessoa" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="d-block w-100" src="source/images/hoteis/joao_pessoa.jpg" alt="foto do hotel">
+                                        <h5 class="text-colored fw-bold mt-2">Ocean Eyes Resort - João Pessoa</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>                        
+                                </div>
+                            </div>
+                            <div id="natal" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="d-block w-100" src="source/images/hoteis/natal.jpg" alt="foto do hotel">
+                                        <h5 class="text-colored fw-bold mt-2">Ocean Eyes Resort - Natal</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="porto-de-galinhas" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="d-block w-100" src="source/images/hoteis/porto_de_galinhas.jpg" alt="foto do hotel">
+                                        <h5 class="text-colored fw-bold mt-2">Ocean Eyes Resort - Porto de Galinhas</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="rio-de-janeiro" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="source/images/hoteis/rio.jpg" alt="foto do hotel">
+                                        <h5 class="text-colored fw-bold mt-2">Ocean Eyes Resort - Rio de Janeiro</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="source/images/hoteis/rio.jpg" alt="foto do hotel">
+                                        <h5 class="text-colored fw-bold mt-2">Ocean Eyes Resort - Rio de Janeiro 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="source/images/hoteis/rio.jpg" alt="foto do hotel">
+                                        <h5 class="text-colored fw-bold mt-2">Ocean Eyes Resort - Rio de Janeiro 3</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reserva" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center" >Para Reservas <span class="text-colored-title"><i class="bi bi-arrow-down-circle"></i></span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="source/scripts/jquery.mask.min.js"></script>
+    <script src="source/scripts/jquery.validate.min.js"></script>
+    <script src="source/scripts/main.js"></script>
+</body>
+</html>

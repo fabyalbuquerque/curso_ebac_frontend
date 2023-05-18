@@ -1,0 +1,94 @@
+@use 'variaveis';
+
+body {
+    font-family: variaveis.$fontePrincipal;
+}
+
+.section-title {
+    font-family: variaveis.$fonteTitulo;
+    font-size: 2em;
+}
+
+.navbar {
+    background-color: #004d61;
+}
+
+.text-colored-ocean {
+    color: #5bd1d7;
+}
+
+.text-colored-title {
+    color: #ff502f;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #004d61;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+p,
+.text-colored {
+    color: #212529;
+}
+
+#historia {
+    background-color: #fff;
+}
+
+#porque-melhor,
+#hoteis {
+    background-color: #5bd1d7;
+}
+
+.carousel img {
+    height: 800px;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+.nav-hoteis .nav-link.active,
+#fale-conosco button {
+    background-color: #fff;
+    color: #004d61;
+}
+
+.nav-hoteis .nav-link:hover {
+    color: #004d61;
+}
+
+#reserva button {
+    background-color: #5bd1d7;
+    color: #004d61;
+}
+
+#atracoes img {
+    height: 250px;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    #atracoes img {
+        height: 180px;
+    }
+
+    .section-title {
+        font-family: variaveis.$fonteTitulo;
+        font-size: 1.5em;
+    }
+}
