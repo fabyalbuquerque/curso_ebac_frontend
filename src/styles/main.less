@@ -1,0 +1,102 @@
+@fontePrincipal: 'Trebuchet MS', sans-serif;
+@corDeFundo:  rgb(118, 118, 219);
+@corDoTextoDoBotao: rgb(194, 204, 194);
+@corDoFundoDoBotao: rgb(9, 139, 68);
+@corDoFundoDoBotaoExcluir: red;
+@corDaBorda: rgb(17, 17, 112);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 60px auto;
+}
+
+header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid @corDaBorda;
+}
+
+form {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 40px auto;
+
+    input, button, button.excluir-contato {
+        padding: 10px 31px;
+        border: none;
+        font-family: @fontePrincipal;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+input:focus {
+    outline: 4px solid @corDaBorda;
+}
+
+form button {
+    background-color: @corDoFundoDoBotao;
+    color: @corDoTextoDoBotao;
+    padding: 0 18px;
+    font-size: 3em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tabela-excluir {
+    text-align: center;
+    width: 32px;
+}
+
+.span-excluir {
+    background-color: @corDoFundoDoBotaoExcluir;
+    color: @corDoTextoDoBotao;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 8px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    margin: 18px auto;
+    font-size: 1.5em;
+    border-collapse: collapse;
+    border: 2px solid @corDaBorda;
+}
+
+thead th {
+    background-color: rgb(215, 234, 250);
+    padding: 18px;
+    border: 2px solid @corDaBorda;
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 8px;
+    border: 2px solid @corDaBorda;
+}
+
+tbody th {
+    border: 2px solid @corDaBorda;
+}
+
+
+
